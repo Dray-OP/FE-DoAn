@@ -1,55 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
-a{
+
+a {
     text-decoration: none;
+    color: black;
 }
-#container{
+a:hover{
+    color: #d53c36;
+}
+
+#container {
     width: 1000px;
-    margin:  0 auto;
+    margin: 0 auto;
 }
 
 .col-1 {
     width: 8.33%;
 }
 
-#title{
+#title {
     height: 200px;
     width: 100%;
     background: blue;
     margin-bottom: 20px;
 }
-#content-1{
+
+#content-1 {
     display: flex;
 }
+
 /*content 1 top left*/
-#content-1-left{
+#content-1-left {
     width: 49%;
     display: flex;
     flex-wrap: wrap;
 }
-.content-top-1{
+
+.content-top-1 {
     position: relative;
     height: 270px;
     margin-bottom: 20px;
 }
-.content-top-1 h2{
+
+.content-top-1 h2 {
     position: absolute;
     bottom: 0;
     color: aliceblue;
     padding: 0 20px 0 20px;
 }
 
-
 /*content 1 top right*/
-#content-1-right{
+
+#content-1-right h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#content-1-right {
     width: 51%;
     display: flex;
     flex-wrap: wrap;
 }
-.top-right:not(:nth-child(2n)){
+
+.top-right:not(:nth-child(2n)) {
     width: 250px;
     height: 200px;
     margin-right: 10px;
@@ -72,6 +90,52 @@ h1 {
     padding: 20px 0 0 20px;
 }
 
+/*content 2*/
+#content-2 {
+    display: flex;
+    /*    position: relative;*/
+}
+
+#content-2-left {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.ct2 {
+    display: flex;
+}
+
+#content-2-right {
+    width: 30%;
+    height: 500px;
+    background: blue;
+    position: relative;
+}
+
+#content-2-right div {
+    position: fixed;
+    position: absolute;
+    background: red;
+    width: 300px;
+    height: 500px;
+    background-image: url(../images/quangcao.png)
+}
+
+/*
+#content-2-right img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+}
+*/
+
+
+
+
+/*menu*/
 #menu {}
 
 #menu > ul {
@@ -112,30 +176,3 @@ h1 {
     display: block;
     z-index: 100;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
